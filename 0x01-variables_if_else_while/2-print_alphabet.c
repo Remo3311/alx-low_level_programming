@@ -1,22 +1,19 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - print the alphabet.
  *
- * Description: print all alphabet letters
- *
- * Return: Always 0 (success)
-*/
-
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-char i;
+	char alp[26] = "abcdefghigklmnopqrstuvwxyz";
+	int i;
 
-for (i = 'a' ;i <= 'z'; i++);
-
-putchar(i);
-putchar('\n');
-
-return (0);
-
+	for (i = 0; i < 26; i++)
+	{
+		putchar(alp[i]);
+	}
+	putchar('\n');
+	return (0);
 }
