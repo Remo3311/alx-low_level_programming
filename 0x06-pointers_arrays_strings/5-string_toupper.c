@@ -1,22 +1,21 @@
 #include "main.h"
-
 /**
  * string_toupper - changes all lowercase letters of a string
  * to uppercase
- * @str:  string to return.
- * Return: string.
+ * @s: input string.
+ * Return: the pointer to dest.
  */
 
-char *string_toupper(char *str)
+char *string_toupper(char *s)
 {
-	int i;
+	int count = 0;
 
-	for (i = 0; str[i] != '\0'; i++)
+	while (*(s + count) != '\0')
 	{
-		if (str[i] >= 97 && str[i] <= 122)
-		{
-			str[1] = str[1] - 32;
-		}
+		if ((*(s + count) >= 97) && (*(s + count) <= 122))
+			*(s + count) = *(s + count) - 32;
+		count++;
 	}
-	return (str);
+
+	return (s);
 }
