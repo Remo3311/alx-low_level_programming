@@ -17,7 +17,7 @@ char *cap_string(char *s)
 	{
 	for (i = 0; i < 13; i++)
 	{
-		if (*(s + count) == sep_words[i])
+		if (*(s + c) == sep_words[i])
 		{
 			if ((*(s + (c + 1)) >= 97) && (*(s + (c + 1)) <= 122))
 				*(s + (c + 1)) = *(s + (c + 1)) - 32;
