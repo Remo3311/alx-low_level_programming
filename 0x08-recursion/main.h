@@ -11,4 +11,5 @@ int check_prime(int n, int othrn);
 int is_palindrome(char *s);
 int pal_check(char *s, int l);
 int _strlen_recursion(char *s);
+int wildcmp(char *s1, char *s2);
 #define NULL 0
