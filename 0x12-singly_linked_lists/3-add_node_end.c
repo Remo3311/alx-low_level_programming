@@ -9,7 +9,7 @@
  * Description: adds a new node at the end of linked list
  * Return: address of new element
  */
-list_t *add_node_end(list_t **head, const char *str);
+list_t *add_node_end(list_t **head, const char *str)
 {
 	int count = 0;
 	list_t *end_node, *cursor;
